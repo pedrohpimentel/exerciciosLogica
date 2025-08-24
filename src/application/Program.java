@@ -7,21 +7,21 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        /*Crie um programa que declare duas variáveis inteiras, num1 e num2,
-        e atribua a elas os valores 10 e 20, respectivamente.
-        Depois, crie uma terceira variável soma que receba a soma de num1 e num2.
-        Por fim, imprima na tela o resultado da soma. */
+        /*Desenvolva um programa que peça ao usuário para digitar um número inteiro.
+        O programa deve verificar se o número é par ou ímpar. Se for par, imprima a mensagem "O número é par.".
+        Se for ímpar, imprima "O número é ímpar.". */
 
-        System.out.println("Digite dois valores!");
+        System.out.println("Verifique se um número é par ou ímpar");
+        System.out.println();
+        System.out.print("Digite um número inteiro: ");
+        int num = sc.nextInt();
 
-        System.out.print("Valor 1: ");
-        int valor1 = sc.nextInt();
-
-        System.out.print("Valor 2: ");
-        int valor2 = sc.nextInt();
-
-        int media = valor1 + valor2;
-        System.out.println("Soma destes dois valores = " + media);
+        if (num % 2 == 0){
+            System.out.println("É PAR!");
+        }
+        else {
+            System.out.println("É ÍMPAR");
+        }
 
         sc.close();
         }
