@@ -7,45 +7,21 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite suas três notas! ");
+        /*Crie um programa que declare duas variáveis inteiras, num1 e num2,
+        e atribua a elas os valores 10 e 20, respectivamente.
+        Depois, crie uma terceira variável soma que receba a soma de num1 e num2.
+        Por fim, imprima na tela o resultado da soma. */
 
-        // Declara e inicializa a variável 'soma' com 0.
-        // Ela será usada para acumular o valor das notas.
-        double soma = 0;
+        System.out.println("Digite dois valores!");
 
-        // Inicia um laço de repetição (for) que irá executar 3 vezes.
-        // O contador 'i' começa em 1 e vai até 3.
-        for (int i = 1; i <= 3 ; i++) {
+        System.out.print("Valor 1: ");
+        int valor1 = sc.nextInt();
 
-            // Exibe uma mensagem para o usuário, indicando qual nota ele deve digitar (ex: "nota 1 : ").
-            System.out.print("nota " + i + " : ");
+        System.out.print("Valor 2: ");
+        int valor2 = sc.nextInt();
 
-            // Lê o valor digitado pelo usuário (que é um número decimal) e armazena na variável 'notas'.
-            double notas = sc.nextDouble();
-
-            // Adiciona o valor da 'notas' à variável 'soma'. É o mesmo que 'soma = soma + notas;'.
-            soma += notas;
-        }
-
-        // Calcula a média, dividindo a soma total das notas pelo número de notas (3).
-        double media = soma / 3;
-
-        // Exibe o resultado final, mostrando o valor da média calculada.
-        System.out.println("A sua média é = " + media);
-
-        // Inicia uma estrutura de decisão (if/else).
-        // Se a média for maior ou igual a 60, executa o bloco 'if'.
-        if (media >= 60.00){
-
-            // Se a condição for verdadeira, exibe a mensagem de aprovação.
-            System.out.println("Você foi aprovado!");
-        }
-
-        // Se a condição 'if' for falsa, executa o bloco 'else'.
-        else {
-            // Se a condição for falsa, exibe a mensagem de reprovação.
-            System.out.println("Você foi reprovado!");
-        }
+        int media = valor1 + valor2;
+        System.out.println("Soma destes dois valores = " + media);
 
         sc.close();
         }
