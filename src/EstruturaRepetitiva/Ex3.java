@@ -42,7 +42,6 @@ No final, deve exibir a quantidade de tentativas que o usuário precisou para ac
 
         System.out.println("Você precisou de " + tentativas + " tentativa(s) para acertar.");
 
-
         sc.close();
     }
 
