@@ -14,7 +14,7 @@ public class Ex2 {public static void main(String[] args) {
     System.out.print("Digite um valor inteiro: ");
     int num = sc.nextInt();
 
-    if (num % 2 == 0){
+    if (num % 2 == 0) {
         System.out.println("O número é par.");
     } else {
         System.out.println("O número é ímpar.");
