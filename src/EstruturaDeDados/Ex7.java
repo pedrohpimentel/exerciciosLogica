@@ -13,33 +13,24 @@ public class Ex7 {
         /*Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros
 e armazene-os em um vetor. Em seguida, mostrar na tela todos os números negativos lidos. */
         int n;
-        double soma,media;
 
-        System.out.print("Quantos números você vai digitar? ");
+        System.out.print("Quantos numeros voce vai digitar? ");
         n = sc.nextInt();
 
-        double[] vetor = new double[n];
-        for (int i = 0; i < n; i++) {
-            System.out.print("Digite um número: ");
-            vetor[i] = sc.nextDouble();
-        }
-
-        soma = 0;
-        for (int i = 0; i < n; i++) {
-            soma += vetor[i];
-        }
-
-        media = soma/n;
-
-        System.out.println("VALORES = ");
-
+        int[] vetor = new int[n];
 
         for (int i=0; i<n; i++) {
-            System.out.printf("%.1f  ", vetor[i]);
+            System.out.print("Digite um numero: ");
+            vetor[i] = sc.nextInt();
         }
 
-        System.out.printf("\nSOMA = %.2f\n", soma);
-        System.out.printf("MEDIA = %.2f\n", media);
+        System.out.println("NUMEROS NEGATIVOS:");
+
+        for (int i=0; i<n; i++) {
+            if (vetor[i] < 0) {
+                System.out.printf("%d\n", vetor[i]);
+            }
+        }
 
         sc.close();
     }
