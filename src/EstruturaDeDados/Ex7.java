@@ -23,7 +23,6 @@ e armazene-os em um vetor. Em seguida, mostrar na tela todos os números negativ
             System.out.print("Digite um número: ");
             vetor[i] = sc.nextDouble();
         }
-
         soma = 0;
         for (int i = 0; i < n; i++) {
             soma += vetor[i];
