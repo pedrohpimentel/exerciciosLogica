@@ -9,7 +9,7 @@ public class Ex8 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        /* Manipulando uma Pilha (Intermediário)
+        /* Manipulando uma Pilha
 Simule um sistema de "Desfazer" (Undo) usando a estrutura de Pilha (Stack), que segue a regra LIFO.
 
 Crie uma Stack<String> para armazenar as "Ações" de um usuário (ex: "Digitar Texto", "Aplicar Negrito").
